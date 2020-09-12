@@ -1,0 +1,74 @@
+div.conta {
+    width: 100%;
+    border: 1px solid gray;
+	margin-top:4.5%;
+	background-image:url("../images/bkg.png");
+	height:auto;
+	}
+
+.nav1 {
+    float: left;
+    width:225px;
+    padding: 1em;
+	height:100%;
+	
+}
+.divnav
+{
+margin-top:5%;
+border:1px solid gray;
+height:300px;
+padding-top:15%;
+padding-left:10%;
+border-radius:12px;
+background-color:#778899;
+display: inline-block;
+width:200px;	
+}	
+
+article {
+	
+    margin-left: 240px;
+    border-left: 1px solid gray;
+	padding:0.1em;
+    overflow: hidden;
+	height:100%;
+}
+.anchr
+{
+text-decoration:none;
+color:white;
+font-size:16px;	
+	
+}	
+.anchr:hover,.anchr:active
+{
+color:#FFD700;
+underline:underline;
+}
+img.avatar {
+    width:65%;
+    border-radius: 50%;
+}
+.divtop
+{
+border:1px solid gray;
+height:200px;
+padding-top:5%;
+padding-left:10%;
+border-radius:12px;
+background-color:white;
+display: inline-block;
+width:200px;
+}
+.ico
+{
+padding-left:90%;
+}
+#hf
+{
+margin-top:10px;	
+padding-bottom:50px;	
+padding-left:30%;
+font-size:30px;	
+}

@@ -1,0 +1,104 @@
+<tr>
+                <td style="background-color:#F3FF33;">#working days</td>
+                <!-- <?php
+                 for ($i = 5; $i >= 1; $i--) {
+                $sql = "SELECT * FROM mss_emss_holidays WHERE month(holiday_date)=strtotime("-$i month")";
+                $result = $conn->query($sql);
+                if ($result->num_rows > 0){
+                    // output data of each row
+                    while($row = $result->fetch_assoc()) {
+                        echo $row["holiday_status"]. "<br>";
+                    }
+                } else {
+                    echo "0 results";
+                }
+            
+                // if (mysqli_num_rows($result) > 0) {
+                //     // output data of each row
+                //     while($row = mysqli_fetch_assoc($result)) {
+                //         echo "id: " . $row["holiday_status"]. "<br>";
+                //     }
+                // } else {
+                //     echo "0 results";
+                // }  
+                
+                
+                ?> -->
+                <td></td>
+            </tr>
+            
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			/////////////working days
+			
+			
+			
+			 while($row=mysqli_fetch_array($result)){
+                $arr[]=$row['holiday_date'];
+                }
+                // print_r($arr);
+                foreach($arr as $value){
+                $date = new DateTime($value);
+                
+                // $arr1=Array([0]=>Array($date->format('m');)
+                // [1]=>Array($date->format('Y');)
+                // )
+                
+                $fields = array(
+                        "month"=> ($date->format('m')),
+                         "year" => ($date->format('Y')),
+                    );
+               
+                }
+             
+            // var_dump($fields);
+                
+                    $o = (object)$fields;
+                    // echo $o->month;
+                    
+                foreach($o as $key=>$field)
+                    
+                {     
+                    // echo names->month;
+                    // echo $fields->month;
+                    $key=(int)$o->month;
+                    $field=(int)$o->year;
+                    $d=cal_days_in_month(CAL_GREGORIAN,$key,$field);
+                    echo "<td>".$d."</td>";    
+
+                }
+            
+                print_r($fields);
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				$(document).ready(function (){
+  $('#empname').change(function(){
+    var empid=this.val();
+    $.ajax({
+      url:'emss.php',
+      method:'post',
+      data:{empid:empid},
+      sucess:function(data){
+
+      }
+    });
+  });
+});

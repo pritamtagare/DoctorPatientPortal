@@ -1,0 +1,157 @@
+<html>
+<head>
+<style>
+h2{
+background-color: #ffdd89;
+padding: 30px 35px;
+color:#fff;
+margin: -10px -50px;
+text-align:center;
+border-radius: 10px 10px 0 0;
+}
+hr{
+margin: 10px -50px;
+border: 0;
+border-top: 1px solid #ccc;
+margin-bottom: 40px;
+}
+div.tray{
+width: 900px;
+height: 910px;
+margin:35px auto;
+font-family: 'Raleway', sans-serif;
+}
+div.main{
+background-color:#fff;
+width: 600px;
+padding: 10px 50px 10px;
+border: 2px solid gray;
+border-radius: 10px;
+font-family: raleway;
+float:left;
+margin-top:;
+margin-left:13%
+}
+input[type=text]{
+width: 100%;
+height: 40px;
+padding: 5px;
+margin-bottom: 25px;
+margin-top: 5px;
+border: 2px solid #ccc;
+color: #4f4f4f;
+font-size: 16px;
+border-radius: 5px;
+}
+input[type=date]{
+width: 100%;
+height: 40px;
+padding: 5px;
+margin-bottom: 25px;
+margin-top: 5px;
+border: 2px solid #ccc;
+color: #4f4f4f;
+font-size: 16px;
+border-radius: 5px;
+}
+input[type=password]{
+width: 100%;
+height: 40px;
+padding: 5px;
+margin-bottom: 25px;
+margin-top: 5px;
+border: 2px solid #ccc;
+color: #4f4f4f;
+font-size: 16px;
+border-radius: 5px;
+}
+select{
+width: 100%;
+height: 40px;
+padding: 5px;
+margin-bottom: 25px;
+margin-top: 5px;
+border: 2px solid #ccc;
+color: #4f4f4f;
+font-size: 16px;
+border-radius: 5px;
+}
+label{
+color: #464646;
+text-shadow: 0 1px 0 #fff;
+font-size: 14px;
+font-weight: bold;
+}
+#submitbtn{
+font-size: 16px;
+background: linear-gradient(#ffbc00 5%, #ffdd7f 100%);
+border: 1px solid #e5a900;
+color: #4E4D4B;
+font-weight: bold;
+cursor: pointer;
+width: 47.5%;
+border-radius: 5px;
+margin-bottom:10px;
+padding: 7px 0;
+}
+#submitbtn:hover{
+background: linear-gradient(#ffdd7f 5%, #ffbc00 100%);
+}
+#submitbtn{
+margin-left:150px;
+}
+input[type=radio]{
+margin-left:100px;
+margin-bottom: 5px;
+margin-top: 5px;
+}
+</style>
+</head>
+<body>
+<div class="tray">
+<div class="main">
+<form action="dotorreg.php" method="post"  >
+<h2>Doctor Registration</h2></br></br>
+<label>Name :</label>
+<input type="text" name="name"  placeholder="Name" required/>
+<label>Qulification :</label>
+<select  name="quli"   required>
+<option value="mbbs">MBBS</option>
+<option value="md">MD</option>
+<option value="ms">MS</option>
+<option value="dnb">DNB</option> 
+<option value="mch">MCH</option>
+<option value="d.o.r.l">D.O.R.L</option>
+<option value="fcfs">FCFS</option>
+<option value="ms(ortho)">MS(ORTHO)</option>
+<option value="facrsi">FACRSI</option>
+<option value="d'ortho">D'ORTHO</option>
+<option value="generel">GENEREL</option>
+<option value="other">OTHER</option>
+</select>
+<label>Speciality:</label>
+<input type="text" name="spec"  placeholder="Speciality" required/>
+<label>Gender:</label></br>
+<input type="radio" name="gend"  value="male" required><label>MALE</label></input>
+<input type="radio" name="gend" value="female" required><label>FEMALE</label></input><br/></br>
+<label>Address :</label>
+<input type="text" name="addr"  placeholder="Address" required/>
+<label>PinCode :</label>
+<input type="text" name="pin"  placeholder="pin" required/>
+<label>Email :</label>
+<input type="text" name="email"  placeholder="Email" required/>
+<label>Mobile :</label>
+<input type="text" name="mobile"  placeholder="Mobile Number" required/>
+<label>Date Of Birth :</label>
+<input type="date" name="dob"  placeholder="Date of Birth" required/>
+<label>Password :</label>
+<input type="password" name="psw"  placeholder="Password" required/>
+<label>Confirm Password :</label>
+<input type="password" name="cpsw"  placeholder="Please Confirm Your Password" required/>
+
+<input type="submit" name="submit" id="submitbtn"  value="Submit" />
+</form>	
+</div>
+</div>
+</body>
+</html>

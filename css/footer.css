@@ -1,0 +1,18 @@
+
+.footer {
+    position:relative;
+    bottom: 0px;
+    width:100%;
+	} 
+#myFooter {
+	background-color: #373a48;
+	color:white;
+	display: block;
+}
+#myFooter .footer-copyright{
+	background-color: #383737;
+	padding-top:3px;
+	padding-bottom:50px;
+	text-align: center;
+}
+
